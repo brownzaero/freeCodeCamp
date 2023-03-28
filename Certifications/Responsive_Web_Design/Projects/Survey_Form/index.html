@@ -1,19 +1,67 @@
-<h1 id="title">Golden Vault Satisfaction Survey</h1>
-<p id="description">For existing operatives of the Golden Vault only! Please complete this form to let us know how we're doing and how we can improve.</p>
-<form id="survey-form">
-  <label id="name-label" for:"name">Full Name:
-    <input id="name" type="text" name="name" placeholder="Meera Raheer"required>
-    </label>
-  <label id="email-label" for="email">Email:
-    <input id="email" type="email" name="email" placeholder="MRaheer@GV.com" required>
-    </label>
-  <label id="number-label" for="number">Operative #
-    <input id="number" type="number" min="5" max="5" placeholder="54321">
-    </label>
-  <select id="dropdown">
-    <option>Select your class:
-    <option>Cleric
-    <option>Fighter
-    <option>Wizard
-    </select>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Golden Vault Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Golden Vault Satisfaction Survey</h1>
+    <p id="description">For existing operatives of the Golden Vault only! Please complete this form to let us know how we're doing and what we can improve.
+    </p>
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label" for:"name">Full Name:
+        <input id="name" type="text" name="name" placeholder="Meera Raheer"required>
+        </label>
+      <label id="email-label" for="email">Email:
+        <input id="email" type="email" name="email" placeholder="MRaheer@GV.com" required>
+        </label>
+      <label id="number-label" for="number">Operative #
+        <input id="number" type="number" min="5" max="5" placeholder="54321">
+        </label>
+      <label for="dropdown">Please select your class. If multiclassing, choose whichever class with which you have the highest affinity. 
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Artificer</option>
+          <option value="2">Barbarian</option>
+          <option value="3">Bard</option>
+          <option value="4">Cleric</option>
+          <option value="5">Druid</option>
+          <option value="6">Fighter</option>
+          <option value="7">Monk</option>
+          <option value="8">Paladin</option>
+          <option value="9">Ranger</option>
+          <option value="10">Rogue</option>
+          <option value="11">Sorcerer</option>
+          <option value="12">Warlock</option>
+          <option value="13">Wizard</option>
+          <option value="14">Sidekick</option>
+          <option value="15">Multiclass Munchkin</option>
+          <option value="16">Other</option>
+        </select>
+      </label>
+      </fieldset>
+      <fieldset>
+        <label for="intern">
+          <input value="intern" id="intern" type="radio" name="operative-type" class="inline" /> Intern</label>
+        <label for="junior">
+          <input value="junior" id="junior" type="radio" name="operative-type" class="inline" /> Junior Operative</label>
+        <label for="senior">
+          <input value="senior" id="senior" type="radio" name="operative-type" class="inline" /> Senior Operative</label>
+      </fieldset>
+      <fieldset>
+        <label for="honesty">
+          <input value="honest" id="honesty" type="checkbox" required name="honesty" class="inline" /> I am telling the truth and this is my honest opinion.
+        </label>
+        <label for="followup">
+          <input value="followupwithable" id="followup" type="checkbox" name="followup" class="inline" /> I am ok with the Golden Vault following up with me for further details.
+        </label>
+      </fieldset>
+      <label for="comments">Provide additional comments and feedback here:
+        <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Meera is the best handler ever!"></textarea>
+      </label>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
