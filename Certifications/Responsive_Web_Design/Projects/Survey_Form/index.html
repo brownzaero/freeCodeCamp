@@ -7,8 +7,7 @@
   </head>
   <body>
     <h1 id="title">Golden Vault Satisfaction Survey</h1>
-    <p id="description">For existing operatives of the Golden Vault only! Please complete this form to let us know how we're doing and what we can improve.
-    </p>
+    <p id="description"><em>Please complete this form to let us know how we're doing.</em></p>
     <form id="survey-form">
       <fieldset>
       <label id="name-label" for:"name">Full Name:
@@ -17,50 +16,54 @@
       <label id="email-label" for="email">Email:
         <input id="email" type="email" name="email" placeholder="MRaheer@GV.com" required>
         </label>
-      <label id="number-label" for="number">Operative #
-        <input id="number" type="number" min="5" max="5" placeholder="54321">
+      <label id="number-label" for="number">Level:
+        <input id="number" type="number" min="0" max="20" required placeholder="12">
         </label>
-      <label for="dropdown">Please select your class. If multiclassing, choose whichever class with which you have the highest affinity. 
+      <label for="dropdown">Class: 
         <select id="dropdown">
-          <option value="">(select one)</option>
-          <option value="1">Artificer</option>
-          <option value="2">Barbarian</option>
-          <option value="3">Bard</option>
-          <option value="4">Cleric</option>
-          <option value="5">Druid</option>
-          <option value="6">Fighter</option>
-          <option value="7">Monk</option>
-          <option value="8">Paladin</option>
-          <option value="9">Ranger</option>
-          <option value="10">Rogue</option>
-          <option value="11">Sorcerer</option>
-          <option value="12">Warlock</option>
-          <option value="13">Wizard</option>
-          <option value="14">Sidekick</option>
-          <option value="15">Multiclass Munchkin</option>
-          <option value="16">Other</option>
+          <option class="make_red" value="">(select one)</option>
+          <option class="make_red" value="1">Artificer</option>
+          <option class="make_red" value="2">Barbarian</option>
+          <option class="make_red" value="3">Bard</option>
+          <option class="make_red" value="4">Cleric</option>
+          <option class="make_red" value="5">Druid</option>
+          <option class="make_red" value="6">Fighter</option>
+          <option class="make_red" value="7">Monk</option>
+          <option class="make_red" value="8">Paladin</option>
+          <option class="make_red" value="9">Ranger</option>
+          <option class="make_red" value="10">Rogue</option>
+          <option class="make_red" value="11">Sorcerer</option>
+          <option class="make_red" value="12">Warlock</option>
+          <option class="make_red" value="13">Wizard</option>
+          <option class="make_red" value="14">Sidekick</option>
+          <option class="make_red" value="15">Multiclass Munchkin</option>
+          <option class="make_red" value="16">Other</option>
         </select>
       </label>
       </fieldset>
       <fieldset>
+        <label><b>Select your employment status: </b>
         <label for="intern">
           <input value="intern" id="intern" type="radio" name="operative-type" class="inline" /> Intern</label>
         <label for="junior">
           <input value="junior" id="junior" type="radio" name="operative-type" class="inline" /> Junior Operative</label>
         <label for="senior">
           <input value="senior" id="senior" type="radio" name="operative-type" class="inline" /> Senior Operative</label>
+      </label>
       </fieldset>
       <fieldset>
         <label for="honesty">
-          <input value="honest" id="honesty" type="checkbox" required name="honesty" class="inline" /> I am telling the truth and this is my honest opinion.
+          <input value="honest" id="honesty" type="checkbox" required name="honesty" class="inline" /> These are my honest thoughts.
         </label>
         <label for="followup">
-          <input value="followupwithable" id="followup" type="checkbox" name="followup" class="inline" /> I am ok with the Golden Vault following up with me for further details.
+          <input value="followupwithable" id="followup" type="checkbox" name="followup" class="inline" /> Please send me more surveys in the future.
         </label>
       </fieldset>
-      <label for="comments">Provide additional comments and feedback here:
+      <fieldset>
+      <label for="comments">Provide additional feedback here:
         <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Meera is the best handler ever!"></textarea>
       </label>
+      </fieldset>
       <input id="submit" type="submit" value="Submit" />
     </form>
   </body>
